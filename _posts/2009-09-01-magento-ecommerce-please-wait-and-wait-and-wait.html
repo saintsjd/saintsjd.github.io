@@ -1,0 +1,24 @@
+---
+layout: post
+title: Magento Ecommerce, “Please Wait”… and Wait… and Wait 
+permalink: /2009/09/magento-ecommerce-please-wait-and-wait-and-wait/index.html
+tags: [ Magento, open source, PHP,  ]
+---
+
+<p>I installed Magento (<a title="http://www.magentocommerce.com" href="http://www.magentocommerce.com/">http://www.magentocommerce.com</a>) on a dedicated server with 2 Xeon processors and 4 GB of RAM.&nbsp; Often when adding products, editing them, or choosing a category in the admin Magento takes 5-10minutes to complete the Save operation. A “Please Wait” modal dialog appears for long periods of time while Magento is thinking. The operation always completes without error, but It often takes 5-10 minutes just to save a simple product.</p>
+<p>I&nbsp;<a href="http://www.magentocommerce.com/boards/viewthread/53594/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.magentocommerce.com']);">asked for a solution in the Magento Forums</a> and found one…</p>
+<p>Following the the instructions in the DYI tuning section here<br>
+<a title="http://www.magentocommerce.com/blog/comments/performance-is-key-notes-on-magentos-performance/" href="http://www.magentocommerce.com/blog/comments/performance-is-key-notes-on-magentos-performance/">http://www.magentocommerce.com/blog/comments/performance-is-key-notes-on…</a></p>
+<p>I installed each optimization individually to see which made the difference. I found the following:<br>
+- Apache KeepAlives enabled. This seems to help the category selection pages load much much faster.<br>
+- Modify the configuration for your MySQL server. No noticeable gain on performance. Products still take 5 minutes to save.<br>
+- APC or XCache.&nbsp;<strong>This one fixed the problem</strong>.</p>
+<p>Installing xcache seems to have fixed the problem. Products now save in about 2 seconds.</p>
+<p>Edit on November 15th, 2009:</p>
+<p>I found this in the Magento System Reqs:<br>
+“Memory_limit no less than 256Mb (preferably 512)”</p>
+<p>Also please see:</p>
+<ul>
+<li><a title="http://www.magentocommerce.com/blog/comments/understanding-magento-scalability-and-performance-1/" href="http://www.magentocommerce.com/blog/comments/understanding-magento-scalability-and-performance-1/">http://www.magentocommerce.com/blog/comments/understanding-magento-scala…</a></li>
+<li><a title="http://www.magentocommerce.com/whitepaper" href="http://www.magentocommerce.com/whitepaper">http://www.magentocommerce.com/whitepaper</a></li>
+</ul>
