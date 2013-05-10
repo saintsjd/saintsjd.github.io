@@ -19,6 +19,9 @@ h1 a{
 h1 a:visited{
   color: #222;
   }
+h1 a:hover {
+  text-decoration: none;
+  }
 
 a {
   color: rgb(0, 85, 128);
