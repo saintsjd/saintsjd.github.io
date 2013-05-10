@@ -159,7 +159,7 @@ This is one of the most important parts of git. And, it is confusing.
 
 I am going to make a small python wrapper to try out these commands. It will be called gum. And, it will just write git commands for you.
 
-<strong>gum</strong> = <strong>G</strong>it <strong>U</strong>ser (interface) <strong>M</strong>akeover.
+gum = Git User (interface) Makeover.
 
 "gum unstage" here we come! The code is on github: <a href="https://github.com/saintsjd/gum" target="_blank">https://github.com/saintsjd/gum</a>
 
