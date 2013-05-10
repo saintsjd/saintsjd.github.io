@@ -1,0 +1,118 @@
+#!/usr/bin/python
+"""
+Use wget to download and create a copy of a website browseable offline
+Created by: Jon Saints <saintsjd@gmail.com>
+Version: 0.1
+Date: May 29, 2006
+
+  USAGE:
+  offline_browser OPTIONS websiteurl 
+
+""" 
+import os
+import sys
+import tarfile
+from time import gmtime
+import gzip
+from urlparse import urlparse
+from optparse import OptionParser
+import subprocess 
+import shutil
+
+def main():
+
+    #command line arguments and options
+    parser = OptionParser(usage="%prog [optioins] URL", version="%prog 0.1")    
+    parser.add_option("-t", "--tmp-dir", dest="workingdir", metavar="DIR", type="string", default=os.getcwd(), help="working directory for website/file download" )
+    parser.add_option("-d", "--dest-dir", dest="destdir", metavar="DIR", type="string", default=os.getcwd(), help="final destination zipped website/file" )
+    parser.add_option("-o", "--out-file", dest="outfile", metavar="FILE", type="string", help="name of zip file" )
+    parser.add_option("-Q", "--quota", dest="quota", metavar="SIZE", type="int",help="size limit of download in megabytes" )
+    parser.add_option("-w", "--wait", dest="wait", metavar="SECONDS", type="int", default="2", help="max time to wait between retrieval fo files" )
+    parser.add_option("-l", "--limit-rate", dest="ratelimit", metavar="LIMIT", type="int", default="20", help="maximum bandwidth for download in Kbps" )
+    parser.add_option("-U", "--user-agent", dest="useragent", metavar="AGENT", type="string", default="wget",help="web browser identity (values are IE, FF)" )
+    parser.add_option("-c", "--clean-up", action="store_true", dest="cleanup", default=False, help="delete downloaded files after creating archive")
+    (options, args) = parser.parse_args()
+
+    #if no URL was supplied to retreive
+    try:
+      url = args[0]
+    except IndexError:
+      print "ERROR: No URL was specified for retreival."
+      print parser.print_help()
+      sys.exit(-1)
+
+    #make sure workingdir and destdir do not have a trailing slash
+    if options.workingdir[-1] == "/":
+        options.workingdir = options.workingdir[:-1]
+    if options.destdir[-1] == "/":
+        options.destdir = options.destdir[:-1]
+
+    #outfile name
+    folder = urlparse(url)[1]
+    filename = None
+    if options.outfile != None:
+          filename = options.outfile
+    else:
+          now = gmtime()
+          postfix = ('%d%d%d%d%d%d' % (now[0], now[1], now[2], now[3], now[4], now[5]) )
+          filename = ('%s_%s' % (folder, postfix) )
+    
+
+    optionstring = "--continue -np -r --mirror --wait=%s --random-wait --limit-rate=%sK -p -E --convert-links " % ( options.wait, options.ratelimit) 
+
+    #handle quota -- does this actually work in wget??
+    if options.quota != None:
+        optionstring = optionstring + ("--quota=%sm" % options.quota)
+
+    #user agent spoofing
+    if options.useragent == "ie" or options.useragent == "IE": 
+      optionstring = optionstring +  " -U \"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)\""
+    elif options.useragent == "ff" or options.useragent == "FF":
+      optionstring = optionstring +  " -U \"Mozilla/5.0 Gecko/20060418 Firefox/1.0.8\""
+
+    command = ('wget %s %s' % ( optionstring, url ) )
+
+    try:
+        #make sure we are in the working directory
+        os.chdir( options.workingdir )
+        
+        retcode = subprocess.call( command, shell=True)
+        if retcode < 0:
+            print >>sys.stderr, "wget was terminated by signal", -retcode
+    except OSError, e:
+        print >>sys.stderr, "wget execution failed:", e
+
+
+    if retcode == 0:
+      try:
+        #make sure folder exists
+        os.stat(folder)
+
+        #zip up the folder
+        if folder != '':
+          tar = tarfile.open( filename + ".tar.gz" , 'w:gz' ) 
+          tar.add(folder)
+          tar.close()
+  
+        #clean-up our mess if told to do so 
+        if options.cleanup == True:
+            try:
+              retcode = subprocess.call( ('rm -rf %s/%s' % (options.workingdir, folder)), shell=True)
+              if retcode < 0:
+                  print >>sys.stderr, "clean up was terminated by signal", -retcode
+            except OSError, e:
+              print >>sys.stderr, "clean up execution failed:", e
+
+	#if destdir is different from current dir then move our zipped file to destdir
+	if options.destdir != options.workingdir:
+	    src = ( "%s/%s" % (options.workingdir, filename) )
+	    dest = ( "%s/%s" % (options.destdir, filename) )
+	    shutil.move( src, dest ) 
+
+      #folder doesn't exist
+      except OSError, (errno, strerror):
+          print "ostat: OSError(%s): %s" % (errno, strerror)
+
+
+if __name__ == "__main__":
+    main()

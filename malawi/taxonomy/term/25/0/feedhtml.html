@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.ituprising.com/malawi" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Barrio Malawi - HOWTOs</title>
+ <link>http://www.ituprising.com/malawi/taxonomy/term/25/0</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Network Monitoring with Ubuntu</title>
+ <link>http://www.ituprising.com/malawi/blog/jon/network_monitoring_with_ubuntu</link>
+ <description>&lt;p&gt;I am starting to publish the final results of my Fulbright research. Here is an article I published on the Ubuntu Linux Community wiki about creating a network monitoring server to analyze traffic on your network.&lt;/p&gt;
+&lt;p&gt;It has proven to be an essential tool for my resaerch and for improving the campus network at Mzuzu University.  If you want detailed analysis of who is doing what on your computer network, this &lt;a href=&quot;https://help.ubuntu.com/community/NetworkMonitoringBridge&quot;&gt;Network Monitoring Bridge&lt;/a&gt; is for you.&lt;/p&gt;
+&lt;br class=&quot;clear&quot; /&gt;</description>
+ <comments>http://www.ituprising.com/malawi/blog/jon/network_monitoring_with_ubuntu#comments</comments>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/connectivity">connectivity</category>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/fulbright_journal">Fulbright Journal</category>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/howtos">HOWTOs</category>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/networking">networking</category>
+ <pubDate>Mon, 30 Oct 2006 09:48:16 -0500</pubDate>
+ <dc:creator>jon</dc:creator>
+ <guid isPermaLink="false">162 at http://www.ituprising.com/malawi</guid>
+</item>
+<item>
+ <title>Faster browsing over slow connections with Loband</title>
+ <link>http://www.ituprising.com/malawi/blog/jon/faster_browsing_over_slow_connections_with_loband</link>
+ <description>&lt;p&gt;Today a friend at the university showed me &lt;a href=&quot;http://www.loband.org&quot;&gt;Loband&lt;/a&gt;, a service that simplifies web pages, in order to make them download faster over slow internet connections.  Loband strips out colors and images, leaving only the text and links of the original web page.  Images are replaced with an “i” logo, and by clicking, you are able to load images on-demand. &lt;/p&gt;
+&lt;p&gt;Loband doesn&#039;t work well with most webmail applications, but has been working great for me for reading news websites.  It filters out many of the image heavy advertisements.   &lt;/p&gt;
+&lt;p&gt;To use Loband: just go to &lt;a href=&quot;http://www.loband.org&quot;&gt;http://www.loband.org&lt;/a&gt; and type in the URL of the website you would like to simply in the gray bar at the top of the web page. Click “go!” and you should see a text-only version of the website. Loband replaces all the links on the simplified pages automatically with new links that will also be passed through the Loband filter... so you are free to keep browsing around the text-only version of the site.  Happy (faster) clicking!!&lt;/p&gt;
+&lt;br class=&quot;clear&quot; /&gt;</description>
+ <comments>http://www.ituprising.com/malawi/blog/jon/faster_browsing_over_slow_connections_with_loband#comments</comments>
+ <category domain="http://www.ituprising.com/malawi/blog_topics/bandwidth">bandwidth</category>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/howtos">HOWTOs</category>
+ <pubDate>Wed, 24 May 2006 15:38:41 -0400</pubDate>
+ <dc:creator>jon</dc:creator>
+ <guid isPermaLink="false">74 at http://www.ituprising.com/malawi</guid>
+</item>
+<item>
+ <title>Recovering Deleted files with Linux and Sleuthkit</title>
+ <link>http://www.ituprising.com/malawi/blog/jon/recovering_deleted_files_with_linux_and_sleuthkit</link>
+ <description>&lt;p&gt;Ever accidentally delete a file you really needed from the recycle bin?  Ever format a disk and install a new operating system only to find later that you forgot to save off some really important files first?  The former recently happened to us here at the Univeristy in Mzuzu... we thought doom was upon us until we stumbled upon a open (free to change, use, and distribute) software utility called Sleuthkit (&lt;a href=&quot;http://www.sleuthkit.org&quot;&gt;http://www.sleuthkit.org&lt;/a&gt;).  &lt;/p&gt;
+&lt;p&gt;When we realized our disaster, we started searching Google for &quot;data recovery&quot;, &quot;recover my files&quot;, etc.  Listings appeared for companies charging hundreds of dollars for data recovery services and software. We tried some of the trial versions of the commercial software, but nothing was able to detect our files.  Finally one of us here in the office in Mzuzu stumbled upon Sleuthkit, an  amazing utility that was able to recover out deleted files from a formatted disk and didn&#039;t cost us a penny!&lt;/p&gt;
+&lt;p&gt;For all those out there that do not feel comfortable removing hard disks from computers, or if all of this talk of Ubuntu and software is boring you at this stage, let me leave you with just one parting thought - if you are using a computer and discover that a file you really need has somehow been &quot;permanently&quot; deleted the steps you should take are:&lt;/p&gt;
+&lt;p&gt;1. Immediately stop using the computer and shut it down.  When your precious file was &quot;deleted&quot; from the disk, it wasn&#039;t actually deleted at all.  In fact all the computer did was make a note to it self that the space occupied by the file is now free to be over written. If your file has not yet been over written by new files, then recovery might possible with Sleuthkit.&lt;/p&gt;
+&lt;p&gt;2. Next, contact all the nerds you know.  Tell them what has happened and tell them that you have heard of about tools like &quot;Ubuntu&quot;, &quot;Linux&quot;, and &quot;Sleuthkit&quot; that can be used to fix the problem.  If the nerd&#039;s eyes light up when you mention &quot;Ubuntu&quot; or &quot;Linux&quot; you have found the right person to help.&lt;/p&gt;
+&lt;p&gt;The following are the steps we used to recover our files from the formatted disk here at the university in Mzuzu:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Remove the hard disk from the computer it was in when the files were deleted (if the disk with deleted files in on a laptop do the following: boot the laptop with a liveCD such as knoppix, mount a network drive using smbmount or nfs, use dd to write an image of the disk to the network drive, and  skip to step #8 below)&lt;/p&gt;
+&lt;li&gt;Attach the disk with the &quot;deleted&quot; files to a computer that is running Ubuntu Linux as its operating system (I imagine your Could use a Ubuntu LiveCD here )&lt;br /&gt;
+&lt;strong&gt;*** Note this computer will need to have free disk space larger than the entire size of the disk with deleted files ****&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;Boot up the Ubuntu computer
+&lt;li&gt;use System-&amp;gt;Administration-&amp;gt;Disks or run the command &quot;df -h&quot; from the command line to determine which system device number your disk being identified by.  We used df -h and based on the size of our disks found that the one with the deleted files was referenced as /dev/hdb&lt;br /&gt;
+&lt;strong&gt;*** Only once you are positive that you have the correct system identity of your disk should you proceed ***&lt;/strong&gt;&lt;/p&gt;
+&lt;li&gt;Create a disk image of the disk &quot;sudo dd if=/dev/YOUR_DISK_ID of=/home/YOUR_HOME_FOLDER/recovery_disk_image.img&quot;
+&lt;li&gt;When the image of the disk with deleted files is ready, power down Ubuntu and remove the disk with the deleted files. Store it in a safe place. But do not plug it back into another computer just yet.
+&lt;li&gt;Turn the Ubuntu computer back on
+&lt;li&gt;Add the universe software repoitories to your apt sources list (see The Ubuntu Getting Started Guidi on Google for more info)
+&lt;li&gt;use apt or synaptic package manager to to install &lt;strong&gt;sleuthkit&lt;/strong&gt; and &lt;strong&gt;autopsy&lt;/strong&gt;
+&lt;li&gt;open a command line prompt and run &quot;sudo autopsy&quot;
+&lt;li&gt;open a web browser and go to the page &lt;a href=&quot;http://localhost:9999/autopsy&quot; title=&quot;http://localhost:9999/autopsy&quot;&gt;http://localhost:9999/autopsy&lt;/a&gt;
+&lt;li&gt;A graphical interface appears Choose &quot;New case&quot; and follow the questions that the wizard asks you.  When prompted for the location of the disk image enter &quot;/home/YOUR_HOME_FOLDER/formatted_disk.img&quot;
+&lt;li&gt;After sluethkit analyzes the disk image it will display a listing of the disk&#039;s partitions. Choose the partition where you deleted file was saved and click Analyze -&amp;gt; File Analysis
+&lt;li&gt;Along the left hand side of the screen you will see a search box where you can search for the deleted file by name. Enter the file name and click Search.
+&lt;li&gt;A list of the files matching your search text will appear. Browse the list of files and click on the hyperlink name of the file that you would like to recover
+&lt;li&gt;Once the file finishes loading click the Export hyperlink and wait for your web browser to prompt you to save the file
+&lt;li&gt;When prompted save the file
+&lt;li&gt;Test to make sure your “deleted” file opens correctly on another computer. Transfer the file to another computer using a CD, USB flash drive, floppy disk or the internet
+&lt;/ol&gt;
+&lt;p&gt;Repeat steps 14 -18 to recover more files that were deleted.  Using these steps we were able to recover an entire folder of files from a disk that had been formatted and reinstalled with a new version of Windows XP. Hope it works for you as well as it worked for us&lt;/p&gt;
+&lt;br class=&quot;clear&quot; /&gt;</description>
+ <comments>http://www.ituprising.com/malawi/blog/jon/recovering_deleted_files_with_linux_and_sleuthkit#comments</comments>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/howtos">HOWTOs</category>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/linux">Linux</category>
+ <category domain="http://www.ituprising.com/malawi/nerds_only">Nerds Only</category>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/open_source">open source</category>
+ <pubDate>Wed, 17 May 2006 03:39:17 -0400</pubDate>
+ <dc:creator>jon</dc:creator>
+ <guid isPermaLink="false">71 at http://www.ituprising.com/malawi</guid>
+</item>
+<item>
+ <title>Buying a car in Malawi</title>
+ <link>http://www.ituprising.com/malawi/blog/jon/buying_a_car_in_malawi</link>
+ <description>&lt;p&gt;We bought a car today! And so we say good buy to the mini-busses for a while.  Buying a car in Malawi was an entertaining experiment and a wonderful insight into the economy here.  In all the process took about one week from when agreed to buy the car.  Everything here is done in cash, so it made things the transaction a little tricky.  We were able to wire money from the US to our recently opened Malawian bank account.  It took about 4 days for the transaction to take.  We then wrote a check to ourselves for an amount equal to about a foot and a half tall stack of bills in Malawian Kwacha. The largest bill in Malawi is 500 Kwacha (this is about $4.50). If you can imagine buying a car with a stack of five-dollar bills you will quickly be able to visualize the chunk of change we were carrying with us.  So we loaded our chunk into a backpack and a friend of ours drove us to the office of the owner of the car. The office is in a rougher end of Lilongwe, a place where you really wouldnt even want to walk around with as little as $10 in your pocket (hey, we really needed wheels).  There we traded the stack for the car you see here... a pretty good deal if you ask me.&lt;/p&gt;
+&lt;p&gt;Here are somethings to keep in mind the next time you want to buy a car in Malawi:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you are speaking about a car with someone on the phone, be sure to ask if the car is a “runner”. Cars in Malawi come as “runners” and “non-runners”. Just because a car is for sale, do not expect it to run or have an engine.
+&lt;li&gt;When reading classified adds for cars, the term “lady driven” essentially means lightly driven.  Chances are the car you are looking at was driven only on paved roads.
+&lt;li&gt;Check that the registration tags are all in place and up to date. There should be three or four of them from the various auto agencies of Malawi on the left hand side of the windshield.  Nearly every road block in Malawi checks your tags.
+&lt;li&gt;Verify with your employer whether you are eligible for “duty free status” or not.  Basically there are two car markets in Malawi the duty paid and duty unpaid markets.  No one seems to really know what the law is, but some employees of certain organizations receive duty free status for their time in Malawi. Employees with duty free status are able to buy cars that do not have their duty paid. Duty in Malawi is about 100% of the value of the car, so you do not want to discover that you need to pay duty after you buy one. If you have duty free status, the cars you will be able to buy will be significantly cheaper, but might be harder to sell because you need sell to another person with duty free status.  Duty paid cars are more expensive, but can be sold to a wider range of people.
+&lt;li&gt;Cars in Malawi need to have strips of red and white reflective tape on the bumpers. Red on the back and white on the front.  They check for this frequently at the countries many road blocks.
+&lt;li&gt;Cars in Malawi are also required to carry two reflective triangles with them at all times, make sure the car you are buying comes with them. I have already been asked twice to show my triangles at multiple road blocks.
+&lt;li&gt;Check that the car has a good spare tire and a jack. Often if the owner has taken the car to a mechanic the jack “disappears”.  The owner might now even be aware of this.
+&lt;li&gt;Check exchange rates carefully for your method of payment.  Differences of just one or two kwacha can make a huge difference in your price. Wiring in dollars to and from foreign bank accounts might be a good option.  When buying from a local, be prepared to pay cash.  Bring a large backpack and an even larger bodyguard with you to carry your foot and a half tall stack of cash from the bank to the sale.
+&lt;/ul&gt;
+&lt;br class=&quot;clear&quot; /&gt;</description>
+ <comments>http://www.ituprising.com/malawi/blog/jon/buying_a_car_in_malawi#comments</comments>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/howtos">HOWTOs</category>
+ <category domain="http://www.ituprising.com/malawi/blog_topics/malawi_travel_guides">Malawi Travel Guides</category>
+ <pubDate>Fri, 10 Mar 2006 06:32:25 -0500</pubDate>
+ <dc:creator>jon</dc:creator>
+ <guid isPermaLink="false">26 at http://www.ituprising.com/malawi</guid>
+</item>
+<item>
+ <title>What is a Blog?</title>
+ <link>http://www.ituprising.com/malawi/blog/jon/what_is_a_blog</link>
+ <description>&lt;p&gt;“Blog” is a term used to describe a specific type of website. The term “blog” comes from joining two words “web” and  “log” into one.  In fact, “web log” is a perfect description of what blogs truly are- online journals!  Blogs are websites consisting of a series of regularly posted entries that are usually displayed on the web page in chronological order.  Blogs can be written by one author, known as a blogger, or have many contributors (bloggers) writing entries about a common topic or theme. Blogs almost always encourage participation from their audiences and usually provide an easy way for readers to respond to an entry and publish their comments on the same web page.&lt;/p&gt;
+&lt;p&gt;How to use (this and other) blogs&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Getting only the information that you want:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;One of the most common challenges we all face in the Information Age is finding effective means of sorting through the vast quantities of info-junk available at our fingertips in order to find the information that we are looking for.  Most blogs (this one is no exception) are equipped with category systems to help readers slice through content and locate only the entries that interest them the most.  &lt;/p&gt;
+&lt;p&gt;In this blog you will notice that Marissa and Jon&#039;s latest entries appear on the homepage. Beneath each entry on the home page there will be a listing of the categories that the entry is a part of.  Amoung other things our categories include “Artists Only” for entries that have anything to do with art, and “Nerds Only” for entries about computers, Linux, derivatives, and other geeky matters, the category “Fulbright Journal” will hold all entries that are officially part of Jon&#039;s Fulbright research, etc.  By clicking the category name other entries in the same category will appear.  In this way you, as a reader can easily access only the information that interests you most.&lt;/p&gt;
+&lt;p&gt;Examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To see only Fulbright Research entries click here&lt;/li&gt;
+&lt;li&gt;To see only entries that deal with art click Artists Only&lt;/li&gt;
+&lt;li&gt;To see only entries that are about computers and information technology click Nerds Only&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Receive notification of new information on a blog automatically with RSS (Really Simple Sydication) feeds:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Blogs are one of the most dynamic types of websites.  New content and entries are usually posted to the website frequently.  As a reader, it is an inconvinience to continually check blogs for new content.  Most blogs (including this one) offer a cool technology called RSS feeds (Really Simple Sydication) which allows readers to receive automatic notifications when new content becomes available.  To use RSS feeds you will need to download and install RSS feed reader program.  To get started read this excellent tutorial written by the BBC World News Service using RSS feeds LINK HERE.  You can think of an RSS feeds as electronic paper boys that bring news of new blog content directly to your doorstep.  The notification of new content delivered to you will look much like an email, but will not be delivered to your inbox. The notifications are stored in your feed reading application.  Notifcations will include the title and a short description of the new content so you can decide if it is worth reading or not.  &lt;/p&gt;
+&lt;p&gt;Our feeds are listed on the bottom right hand corner of the website where it says “Feed Me...”.  These feeds are categorized so that our readers can choose to be notified only when new content that is of interest becomes available. &lt;/p&gt;
+&lt;p&gt;To use the RSS feeds on this blog follow the instructions below:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Right mouse click one of the feed links&lt;/li&gt;
+&lt;li&gt;Click “Copy link location”&lt;/li&gt;
+&lt;li&gt;Paste the link into your feed reader application&lt;/li&gt;
+&lt;li&gt;You will now be automatically notified of any new content that Marissa or Jon posts to this blog&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Blogging is a participation sport – airing your thoughts:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This blog, like most, allows our readers to post their thoughts to the website for other readers to read and comment upon.  Comments posted to the site will appear as a threaded discussion directly below the full text of any article that Marissa and Jon publish on the blog.&lt;/p&gt;
+&lt;p&gt;To comment on an entry on the blog follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Click the “add comment” link below the full text of any of the entries on the site&lt;/li&gt;
+&lt;li&gt;Type your comments in the text box that appears&lt;/li&gt;
+&lt;li&gt;Click submit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We will review your comments, and if they are hilarious or witty enough, approve them for display on the blog ;)&lt;/p&gt;
+&lt;br class=&quot;clear&quot; /&gt;</description>
+ <comments>http://www.ituprising.com/malawi/blog/jon/what_is_a_blog#comments</comments>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/howtos">HOWTOs</category>
+ <category domain="http://www.ituprising.com/malawi/jons_topics/information_technology">Information Technology</category>
+ <pubDate>Tue, 21 Feb 2006 01:41:34 -0500</pubDate>
+ <dc:creator>jon</dc:creator>
+ <guid isPermaLink="false">7 at http://www.ituprising.com/malawi</guid>
+</item>
+</channel>
+</rss>

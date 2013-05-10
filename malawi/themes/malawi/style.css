@@ -1,0 +1,351 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  color: #000;
+  background-color: #BB8D58;
+  font: 76% Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+  min-width: 770px;
+}
+
+a, a:link {   color: #322E24; font-weight:bold; text-decoration: none;  }
+a:visited { color: #322E24; }
+a:hover, a:focus {   text-decoration: underline;   }
+a:active { color: #322E24; }
+
+.hidden, hr {
+  display: none;
+}
+
+#header {
+  background-color: #FFFADC;
+  background-image: url(images/banner_animals.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin: 0;
+  padding: 0;
+  height: 84px;
+}
+
+#site-name{
+  color: #322E24;
+  margin: 0;
+  padding: 27px 0 0 20px; 
+}
+
+#primary {
+  background-color:#ECCA6F;
+  margin:0;
+  padding:0 15px;
+  border-bottom: 1px solid #84744A;
+  text-align: left;
+}
+
+#primary ul{
+  margin:0;
+  padding:5px 0;
+  
+}
+
+#primary li{
+  margin:0;
+  padding:5px 0;
+  display: inline;
+}
+
+#primary li a{
+  color: #A26D4C;
+  font-weight: bold;
+  font-size:1.2em;
+  padding: 5px 8px;
+}
+
+#primary li a:hover{
+  color: #322E24;
+  background-image: url(images/menu-collapsed.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  text-decoration: none;
+}
+
+#secondary {
+  background-color:#BD8F59;
+  margin:0;
+  padding:0;
+  height:10px;
+  
+}
+
+
+#content {
+  clear: both;
+  background-color:#A26D4C;
+  color: #EBD9B1;
+  width: 100%;
+}
+
+#mission {
+  margin: 0 0 10px 0;
+  padding: 0;
+  width:95%;
+  min-width: 550px;
+  clear:both;
+  height: 121px;
+  margin-top: 1em;
+  background-color:#322E24;
+  background-image: url(images/mission_us.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+#mission div.mission-wrap{
+  background-image: url(images/mission_right.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  margin:0;
+  padding: 0;
+  height: 121px;
+}
+
+#mission div.mission-text{
+  color: #F0E1B8;
+  margin: 0;
+  padding:17px 20px 0 125px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  background: none;
+}
+
+#mission div.mission-text a{
+  color: #ECCA6F;
+}
+#sidebar-right {
+	width: 200px;
+	float: right;
+}
+#footer {
+  background-color: #464234;
+  padding:0;
+  margin:0;
+  border:1px solid #BB8D58;
+  text-align: center;
+  color: #EBD9B1;
+}
+
+#main{
+  padding: 10px 20px;
+  width: auto;
+}
+
+h1, h2.title {
+  margin:0;
+  padding:0;
+}
+
+div.feed-item {
+  padding-bottom: 15px;
+  width: 95%;
+  margin: 0 auto;
+}
+div.feed-item-meta a {
+  color: #BD8F59;
+}
+div.feed-item-body a {
+  color: #EBD9B1;
+}
+h3.feed-item-title a {
+  font-size: 1.2em;
+  color: #ECCA6F;
+}
+
+h2.title a  {
+  color: #EBD9B1;
+  font-size: 1.3em;
+}
+
+.last {
+	margin-bottom: 0;
+}
+.clearing {
+	height: 0;
+	clear: both;
+}
+html.js input.form-autocomplete {
+  background-color:#fff;
+}
+.links, .taxonomy {
+  text-align: right;
+  margin-right: 15px;
+}
+.taxonomy {
+  text-align: right;
+  margin: 0 auto;
+  font-size: 0.8em;
+  color: #BD8F59;
+  margin-right: 15px;
+}
+
+span.submitted{
+  color: #BB8D58;
+  font-weight: bold;
+  font-size: 1.0em;
+}
+span.submitted a{
+  color: #BB8D58;
+}
+
+div.node {
+  font-size: 1.2em; 
+}
+
+.messages {
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+.status {
+  border: 1px solid #3a3;
+  color: #3a3;
+  background-color: #efe;
+}
+.error, form-item input.error {
+  border: 1px solid red;
+  color: red;
+  background-color: #fee;
+}
+td.active, table{
+  color: #000;
+}
+
+.calendar a {
+  text-decoration: none;
+}
+.calendar td, .calendar th {
+  padding: 0.4em 0;
+  border-color: #322E24;
+}
+.calendar .day-today {
+  background-color: #464234;
+}
+.calendar .day-today a {
+  color: #fff;
+}
+.calendar .day-selected {
+  background-color: #594A66;
+  color: #EBD9B1;
+}
+.calendar .header-week {
+  background-color: #ECCA6F;
+}
+.calendar .day-blank {
+  background-color: #ECCA6F;
+}
+.calendar .day-normal, .calendar .day-future {
+  background-color: #EBD9B1;
+}
+.calendar .day-link {
+  background-color: #BB8D58;
+}
+.calendar .row-week td a:hover {
+  background-color: #fff; color: #000;
+}
+.block {
+  padding: 5px;
+  margin-bottom: 6px;
+  background-color: #BB8D58;
+  background-image: url(images/block_rounded_top.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding:0;
+}
+
+.block .title {
+  font-size: 1.2em;
+}
+.block-wrapper {
+  background-image: url(images/block_rounded_bottom.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;    
+  padding: 10px;
+}
+
+
+ul.galleries li{
+  background-color:#464234;
+}
+ul.galleries h3 a{
+  color:#ECCA6F;
+}
+ul.images  {
+  list-style-type: none; 
+}
+ul.images li {
+  display: inline;
+  float:left;
+  padding: 5px;
+  height: 50px;
+}
+ul.images h3 a{
+  font-size: 0.8em;
+}
+ul.images .author, ul.images .date{
+  display:none;
+}
+
+#block-block-1 .title{
+  margin-bottom: 5px;  
+}
+#block-block-1 ul{
+  background-color: #BB8D58;
+  list-style-type: none;  
+}
+
+#block-archive-0 {
+  background-image: none;
+  background-color: transparent;
+}
+#block-archive-0 .block-wrapper{
+  background-image: none;
+  background-color: transparent;
+}
+
+span.description {
+  font-size: 0.85em;
+}
+#search,  #block-search-0 {
+  background-image: none;
+  background-color: transparent;
+}
+#block-search-0 .block-wrapper{
+  background-image: none;
+  background-color: transparent;
+}
+#block-search-0 h2.title{
+  display: none;
+}
+#block-search-0 div{
+  display: inline;
+}
+#search .form-submit, #block-search-0 .form-submit {
+  margin-left: 3px;
+  font-size: 0.9em;
+  border: 1px solid #BB8D58;
+  color: #ECCA6F;
+  background-color: #A26D4C;
+}
+#search .form-submit:hover, #block-search-0 .form-submit:hover {
+  border: 1px solid #BB8D58;
+  color: #A26D4C;
+  background-color: #ECCA6F;
+}
+
+div.comment{
+  background-color: #B58455;
+  padding: 5px;
+  margin: 8px;
+}
