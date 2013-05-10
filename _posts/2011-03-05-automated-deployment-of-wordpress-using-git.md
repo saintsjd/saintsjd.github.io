@@ -5,7 +5,7 @@ permalink: /2011/03/automated-deployment-of-wordpress-using-git/index.html
 tags: [ php, git, automatic ]
 ---
 
-[Heroku](http://www.heroku.com) is sweet hosting platform which offers a pure git deployment workflow. I love using it to deploy my Rails projects. I miss using when I deploy a PHP application.
+[Heroku](http://www.heroku.com) is a sweet hosting platform which offers a pure git deployment workflow. I love using it to deploy my Rails projects. I miss using when I deploy a PHP application.
 
 Lets fix that.... Here is a quick heroku-ish git deployment workflow for your PHP applications. We will be using Wordpress for this example. The same steps can be adapted for Drupal or any other PHP application.
 
@@ -106,12 +106,12 @@ and place this code in it (adjusting the config variables to match your server s
 
 	read oldrev newrev refname
 	if [ $refname = "refs/heads/master" ]; then  
-	    echo "===== DEPLOYING TO LIVE SITE ====="  
-	    unset GIT_DIR  
-	    cd $LIVE  
-	    git pull origin master  
-        echo "===== DONE ====="
-    fi
+		echo "===== DEPLOYING TO LIVE SITE ====="  
+		unset GIT_DIR
+		cd $LIVE
+		git pull origin master
+		echo "===== DONE ====="
+	fi
 
 ### #6 Let the (heroku-like) Fun Begin: Automated Deployment for Wordpress
 

@@ -3,6 +3,6 @@ layout: default
 ---
 <div id="post">
   <h2>{{ page.title }}</h2>
-  <div id="date">committed {{ page.date | date_to_string }}</div>
+  <p><small>By Jon Saints - {{ page.date | date_to_string }}</small></p>
   {{ content }}
 </div>
