@@ -2,7 +2,7 @@
 layout: post
 title: At What Point Does it Pay to Move your Online Store from Etsy to Shopify?
 permalink: /2010/03/at-what-point-does-it-pay-to-move-your-online-store-from-etsy-to-shopify/index.html
-published: false
+published: true
 tags: [ ecommerce, Etsy, Shopify, startups ]
 ---
 
