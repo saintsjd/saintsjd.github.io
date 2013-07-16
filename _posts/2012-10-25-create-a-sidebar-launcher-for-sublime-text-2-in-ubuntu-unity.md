@@ -10,7 +10,7 @@ Using the example in <a href="http://www.technoreply.com/how-to-install-sublime-
 
 Here is how:
 
-    sudo nano -w  /usr/share/applications/sublime.desktop</pre>
+    sudo nano -w  /usr/share/applications/sublime.desktop
 
 Then paste in the following (<span style="text-decoration: underline;"><strong>make sure to update my file paths with your file paths</strong></span>):
 
