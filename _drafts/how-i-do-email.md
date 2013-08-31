@@ -1,9 +1,7 @@
 ---
 layout: post
 title: How I do Email 
-permalink: /2013/05/how-i-do-email/index.html
 tags: [ email, hacks ]
-published: false
 ---
 
 http://www.43folders.com/2006/03/15/email-dash
@@ -23,7 +21,7 @@ Start the day by looking at progress priorities and challenges. Not your email. 
 
 Then, glance at your email for 10 minutes at most.
 
-Archive most message which do require a response.
+Archive most message which do not require a response.
 
 Quickly respond to anything that can be done in a line or two. Then archive it.
 
