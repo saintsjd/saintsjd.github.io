@@ -29,10 +29,10 @@ If we make all the "resetting" and funny "HARD -- HEAD" parameters happen behind
 
 Here are a few other small irks I have with the git UI:
 
-*  I have some files I want to stage. Do I want <strong>git add .</strong>, <strong>git add -u</strong>, or <strong>git add -A</strong>? Which does what again? Confused.
-*  Oh geez. I just staged something by accident. How do I unstage it? Its <strong>git reset</strong>? Or is it <strong>git revert</strong>? Do I do a HARD, --, HEAD, FILE, or something else? Brain damage.
-*  I want to see my changes. <strong>git diff</strong>? <strong>git diff HEAD</strong>? or <strong>git diff --cached</strong>? why not <strong>git diff CACHED</strong>? Grrrr....
-*  <strong>git status</strong> is cluttered with commands telling me how to undo things "use git reset HEAD &lt;file&gt; to unstage". If the commands were easy enough to remember in the first place, we would not need to clutter the status output with reminders. And, what does "changed but not updated mean"? I did update my file! Do you mean "changed but not staged"? Lastly, I would like to humbly request a few fewer "#" characters. Just a few. Please.
+*  I have some files I want to stage. Do I want **git add .**, **git add -u**, or **git add -A**? Which does what again? Confused.
+*  Oh geez. I just staged something by accident. How do I unstage it? Its **git reset**? Or is it **git revert**>? Do I do a HARD, --, HEAD, FILE, or something else? Brain damage.
+*  I want to see my changes. **git diff**? **git diff HEAD**? or **git diff --cached**? why not **git diff CACHED**? Grrrr....
+*  **git status** is cluttered with commands telling me how to undo things "use git reset HEAD &lt;file&gt; to unstage". If the commands were easy enough to remember in the first place, we would not need to clutter the status output with reminders. And, what does "changed but not updated mean"? I did update my file! Do you mean "changed but not staged"? Lastly, I would like to humbly request a few fewer "#" characters. Just a few. Please.
 
 Here is my shot at re-creating a few parts of the Git UI. My hope is that all of these commands become part of git one day and that git becomes easier for new users and forgetful intermediates like me.
 
