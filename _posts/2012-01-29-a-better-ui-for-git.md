@@ -21,19 +21,22 @@ The UI can be confusing and inconsistent for newbies. In fact, even after three 
 An interface should never be a by-product of the implementation of the system. This is where the Git UI goes wrong.
 
 The command <strong>git reset</strong> is a good example. I use <strong>git reset</strong> to undo things. But, its called "reset" and has a bunch of strange parameters which have to do with making writes to the git index. In order to undo changes properly, the reset command requires the user to have a clear understanding of the guts of the git index. This should not be the case for a common command, like undo.
-<pre># Why not replace things like: git reset HEAD -- file with:
-&gt; git unstage</pre>
+
+    # Why not replace things like: git reset HEAD -- file with:
+    &gt; git unstage
+
 If we make all the "resetting" and funny "HARD -- HEAD" parameters happen behind the scenes, then we make the user happier. A lot happier.
 
 Here are a few other small irks I have with the git UI:
-<ul>
-	<li>I have some files I want to stage. Do I want <strong>git add .</strong>, <strong>git add -u</strong>, or <strong>git add -A</strong>? Which does what again? Confused.</li>
-	<li>Oh geez. I just staged something by accident. How do I unstage it? Its <strong>git reset</strong>? Or is it <strong>git revert</strong>? Do I do a HARD, --, HEAD, FILE, or something else? Brain damage.</li>
-	<li>I want to see my changes. <strong>git diff</strong>? <strong>git diff HEAD</strong>? or <strong>git diff --cached</strong>? why not <strong>git diff CACHED</strong>? Grrrr....</li>
-	<li><strong>git status</strong> is cluttered with commands telling me how to undo things "use git reset HEAD &lt;file&gt; to unstage". If the commands were easy enough to remember in the first place, we would not need to clutter the status output with reminders. And, what does "changed but not updated mean"? I did update my file! Do you mean "changed but not staged"? Lastly, I would like to humbly request a few fewer "#" characters. Just a few. Please.</li>
-</ul>
+
+*  I have some files I want to stage. Do I want <strong>git add .</strong>, <strong>git add -u</strong>, or <strong>git add -A</strong>? Which does what again? Confused.
+*  Oh geez. I just staged something by accident. How do I unstage it? Its <strong>git reset</strong>? Or is it <strong>git revert</strong>? Do I do a HARD, --, HEAD, FILE, or something else? Brain damage.
+*  I want to see my changes. <strong>git diff</strong>? <strong>git diff HEAD</strong>? or <strong>git diff --cached</strong>? why not <strong>git diff CACHED</strong>? Grrrr....
+*  <strong>git status</strong> is cluttered with commands telling me how to undo things "use git reset HEAD &lt;file&gt; to unstage". If the commands were easy enough to remember in the first place, we would not need to clutter the status output with reminders. And, what does "changed but not updated mean"? I did update my file! Do you mean "changed but not staged"? Lastly, I would like to humbly request a few fewer "#" characters. Just a few. Please.
+
 Here is my shot at re-creating a few parts of the Git UI. My hope is that all of these commands become part of git one day and that git becomes easier for new users and forgetful intermediates like me.
-<h2>Staging files</h2>
+
+## Staging files
 
 	# Stage all changes, and file deletions. Leave unknown files alone.
 	# Instead of git add -u, just type:
@@ -43,7 +46,8 @@ Here is my shot at re-creating a few parts of the Git UI. My hope is that all of
 	# Instead of git add FILE and git rm FILE, just type:
 	> git stage FILE
 
-<h2>Unstaging Files</h2>
+## Unstaging Files
+
 Ooops. I staged a changed that I do not want to commit.
 
 	# Remove one file from the stage.
@@ -54,7 +58,7 @@ Ooops. I staged a changed that I do not want to commit.
 	# Instead of git reset HEAD, just type:
 	> git unstage
 
-<h2>Undoing changes I have made:</h2>
+## Undoing changes I have made:
 
 Ok. I tried something. It does not work. Just get me back to the last commit.
 
@@ -73,14 +77,15 @@ Ok. I tried something. It does not work. Just get me back to the last commit.
     The file was changed back to the it's state at last commit. 
     Your work has been saved in stash@{1}.</pre>
 
-<h2>Deleting Files</h2>
+## Deleting Files
+
 Let's get rid of git rm. Lets not even tell newbies about it. Just delete files you want from your project, then:
 
 	# smart enough to stage files you have removed as well!!!!
 	> git stage
 	> git stage FILE
 
-<h2>Status</h2>
+## Status
 
 More readable. Less # signs. Less instructions.
 
@@ -96,7 +101,8 @@ More readable. Less # signs. Less instructions.
 
 Nice and clean. No reminders about how to undo things... you already know that: <strong>git undo</strong>. And, no # signs!!
 
-<h2>Automatic Setup</h2>
+## Automatic Setup
+
 The first time I run git from a new computer I am most often greeted with an error. Not a very friendly way to great new users. The message says that I have not set my email and user name.
 
 If this error occurs, shouldn't git just ask me for this information and proceed with the command I typed? Yep, it should.
@@ -117,14 +123,14 @@ This replaces the more confusing error message that git shows users now:
 	> git config --global user.name "Jon Saints"
 	> git config --global user.email "gmail@gmail.com"
 
-	DUFUS!! Just give up now. Seriously.
+	You are a git DUFUS!! Just give up now. Seriously.
 
-<h2>Switching branches</h2>
+## Switching branches 
 
 	# I switch branches with the checkout command. Its ok, but what if we had:
 	> git switch BRANCH
 
-<h2>Showing things I have changed</h2>
+## Showing things I have changed
 
 This is one of the most important parts of git. And, it is confusing.
 
@@ -150,12 +156,12 @@ This is one of the most important parts of git. And, it is confusing.
 	> git diff branch1 branch2
 	> git diff AD34E BCDE543
 
-<h2>Deleting a branch</h2>
+## Deleting a branch 
 
 	# Let's be consistent with git remote command. Instead of git branch -d
 	> git branch rm BRANCH
 
-<h2>Where to from here?</h2>
+## Where to from here?
 
 I am going to make a small python wrapper to try out these commands. It will be called gum. And, it will just write git commands for you.
 

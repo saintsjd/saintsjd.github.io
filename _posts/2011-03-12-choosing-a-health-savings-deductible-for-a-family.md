@@ -16,11 +16,9 @@ The answer depends mostly on how much you have budgeted to spend on health insur
 Start with the amount you have to spend on health related expenses each month. For my wife and I its $700.
 
 Next, look at some Health Plans. You will want to look at two things:
-<ol>
-	<li>How much you can save each month and use toward medical expenses before your deductible kicks in</li>
-	<li>What happens in a worst case scenario. How much monthly will you have to pay if you are seriously injured and need to pay both your monthly premium, plus the full deductible amount.</li>
-</ol>
-&nbsp;
+
+1.  How much you can save each month and use toward medical expenses before your deductible kicks in
+1.  What happens in a worst case scenario. How much monthly will you have to pay if you are seriously injured and need to pay both your monthly premium, plus the full deductible amount.
 
 The spread sheet I used to determine these amounts is here:
 
@@ -29,16 +27,16 @@ The spread sheet I used to determine these amounts is here:
 Please copy this spreadsheet and fill in your own numbers
 
 Here are my conclusions... keep in mind I these are for coverage for myself and my wife in Colorado. Numbers for bigger families in other states will vary greatly. But, the process for choosing the right plan will be the same.
-<ul>
-	<li>if my monthly health budget were &lt; $250: There is no health plan that I could afford. I should seek gov't help</li>
-	<li>$300 monthly health budget: Go with the $10,000 deductible plan. Its all that can be afforded. Some coverage is better than none.</li>
-	<li>$400 monthly health budget: Choice to make here. I can save 18% of my deductible each year on the $10,000 plan. But my worst case monthly cost is $1083. Safer bet is $7000 plan. There I save 4% less towards my deductible each year, but in the worst cast only need to pay $899 per month.</li>
-	<li>$500 monthly health budget: Clear choice here is the $7000 deductible plan. Save the highest percent each year towards deductible 32% and have a lower worst case payment of $899 per month.</li>
-	<li>$600 monthly health budget: Choose the $5000 deductible plan. Over the course of the year you will save the same percent 49% towards your deductible as the $7000 plan, but you will have lower worst case monthly costs of $811</li>
-	<li>$700 monthly health budget: Choose the $5000 deductible plan. Over the course of the year you save the most 73% towards your deductible and have lower worst case monthly costs of $811</li>
-	<li>$800 monthly health budget: Still choose the $5000 plan. Will save 97% towards deductible and have $811 worst case. Savings of going to more expensive $2500 plan is only $9 in worst case $802.</li>
-	<li>$900 and above budget: Still choose the $5000 plan. Will save more towards deductible and have $811 worst case. Savings of going to more expensive $2500 plan is only $9 in worst case $802.</li>
-</ul>
+
+*  if my monthly health budget were &lt; $250: There is no health plan that I could afford. I should seek gov't help
+*  $300 monthly health budget: Go with the $10,000 deductible plan. Its all that can be afforded. Some coverage is better than none.
+*  $400 monthly health budget: Choice to make here. I can save 18% of my deductible each year on the $10,000 plan. But my worst case monthly cost is $1083. Safer bet is $7000 plan. There I save 4% less towards my deductible each year, but in the worst cast only need to pay $899 per month.
+*  $500 monthly health budget: Clear choice here is the $7000 deductible plan. Save the highest percent each year towards deductible 32% and have a lower worst case payment of $899 per month.
+*  $600 monthly health budget: Choose the $5000 deductible plan. Over the course of the year you will save the same percent 49% towards your deductible as the $7000 plan, but you will have lower worst case monthly costs of $811
+* $700 monthly health budget: Choose the $5000 deductible plan. Over the course of the year you save the most 73% towards your deductible and have lower worst case monthly costs of $811
+*  $800 monthly health budget: Still choose the $5000 plan. Will save 97% towards deductible and have $811 worst case. Savings of going to more expensive $2500 plan is only $9 in worst case $802.
+*  $900 and above budget: Still choose the $5000 plan. Will save more towards deductible and have $811 worst case. Savings of going to more expensive $2500 plan is only $9 in worst case $802.
+
 Summary: There are no cases were the lowest deductible plan makes sense. There is also only one case where the highest deductible plan make sense; (when its your only option for health insurance). All other cases its best to choose between the two middle plans. The best choice there depends on how much risk you want to take on.
 
 Curious to see if you all find the same conclusions.
