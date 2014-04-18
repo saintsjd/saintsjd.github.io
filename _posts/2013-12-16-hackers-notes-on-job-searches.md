@@ -66,7 +66,8 @@ your network
 
 Propose a role. Tell them how you can help them most.
 
-### Summary of what works in Job Searches for Hackers
+Summary of what works in Job Searches for Hackers
+---
 
 1. SPIFFY Github profile
 2. RDD – Readme Driven Development 
