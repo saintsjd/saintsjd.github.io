@@ -1,2 +1,3 @@
 #lsi: true
 pygments: true
+markdown: kramdown
