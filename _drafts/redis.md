@@ -1,0 +1,1 @@
+Intro to nosql and redis for sql minds
