@@ -37,9 +37,14 @@ Ways you can create a profile worth looking at:
 
 To busy to write full working code for you Github profile... try **README Driven Development**!
 
-Just create detailed readme of your idea with complete install steps and documentation. Show example of how the user will use your code to solve a problem. The community might just start a discussion... my gum repo got to #5 on hackernews.
+Just create detailed readme of your idea with complete install steps and documentation. Show example of how the user will use your code to solve a problem. The community might just start a discussion... my [gum repo](https://github.com/saintsjd/gum) got to #5 on hackernews.
 
 Clear READMEs can quickly show off an innovative solution to a complex problem. They also make a great spec for when you do start coding.
+
+Here is an example of a couple of my README Driven Development projects:
+
+* [Gum](https://github.com/saintsjd/gum)
+* [Magic Model](https://github.com/saintsjd/magic_model)
 
 ### Ask good Tough Questions
 
