@@ -6,13 +6,13 @@ tags: [devops, tomnod, high scalability]
 
 If you hang out with developers enough, you will hear this refrain:
 
-"Premature optimization is the root of all evil"
+> "Premature optimization is the root of all evil"
 
 The idea is don't spend time fixing problems that you don't have because you are more likely to make your code clumsy and more complicated than it needs to be. 
 
 In my recent work on www.tomnod.com we were hit with a huge amount of traffic during the search for missing Malaysia airlines flight MH370. From that experience, I can tell you that if premature optimization is evil... 
 
-"Optimizing under fire is only slightly more fun" 
+> "Optimizing under fire is only slightly more fun" 
 
 The question becomes what design decisions, which foundations can I lay today, that will let me scale my app to 100x or 1000x the load it handles today. Here is what we learned scaling Tomnod in March of 2014.
 
