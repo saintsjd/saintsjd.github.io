@@ -30,9 +30,10 @@ Ways you can create a profile worth looking at:
 1. Make an open source contribution or two. Even just filling pull requests with your code is good.
 1. Clone some interesting Repos and read the source. Open Source projects give us access to the minds of some of the top coders in the world. We should read open source projects like we read fine works of William Shakespeare. Read open source projects like fine novels. One I highly recommend is [Redis](https://github.com/antirez/redis)
 1. Publish your hobby projects. Even if they are just stubs. Here are some I did recently:
-  * Implement jsonapi.org specification in your favorite language... 
-  * create working example using a new framework like Angular
-  * Heroku-like Deploy of Wordpress with Git
+   * Implement jsonapi.org specification in your favorite language... 
+   * create working example using a new framework like Angular
+   * Heroku-like Deploy of Wordpress with Git
+1. README Driven Development (RDD)
 
 To busy to write full working code for you Github profile... try **README Driven Development**!
 
