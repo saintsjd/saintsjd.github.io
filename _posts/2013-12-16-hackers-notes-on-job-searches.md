@@ -41,7 +41,7 @@ Just create detailed readme of your idea with complete install steps and documen
 
 Clear READMEs can quickly show off an innovative solution to a complex problem. They also make a great spec for when you do start coding.
 
-Here is an example of a couple of my README Driven Development projects:
+Here are examples of a couple of my README Driven Development projects:
 
 * [Gum](https://github.com/saintsjd/gum)
 * [Magic Model](https://github.com/saintsjd/magic_model)
