@@ -34,8 +34,8 @@ heroku run /bin/bash
 From the Heroku bash command prompt, download and extract the source code for the binary package you need to run on Heroku. In my case it was:
 
 ```shell
-curl -O http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
-tar -xjvf geos-3.4.2.tar.bz2
+$ curl -O http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
+$ tar -xjvf geos-3.4.2.tar.bz2
 ```
 
 Open the README or the INSTALL doc for your source code and follow the compile instructions with one change. Change the `prefix` for the install to be something easy to find in your /app folder.
