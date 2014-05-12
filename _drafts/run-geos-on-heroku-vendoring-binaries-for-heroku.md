@@ -80,6 +80,11 @@ tar -xzvf ~/Downloads/geos-3.4.2-heroku.tar.gz
 
 Make sure you have the same folder structure as scratch-space in .heroku/vendor. In my case I have three folders: `bin`, `lib`, and `include`.
 
+```bash
+ls .heroku/vendor
+bin include lib
+```
+
 Add the binaries to your git repo and deploy to Heroku. The binaries will be available to your app.
 
 ```bash
