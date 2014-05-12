@@ -1,0 +1,12 @@
+---
+layout: post
+title: Run Vendored Binaries on Heroku
+tags: heroku, devops, deployment, joy
+---
+
+Recently I needed to install the python shapely library on an app on Heroku.
+
+Shapely has a dependancy on the C Library GEOS which is not part of the base Heroku system. 
+
+Here is how I complied, vendored the binary and ran shapely on Heroku. You can use this same process to vendor and run any binary dependancy on the Heroku platform. 
+
