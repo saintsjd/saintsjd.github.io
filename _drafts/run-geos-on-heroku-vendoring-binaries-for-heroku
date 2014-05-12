@@ -10,3 +10,6 @@ Shapely has a dependancy on the C Library GEOS which is not part of the base Her
 
 Here is how I complied, vendored the binary and ran shapely on Heroku. You can use this same process to vendor and run any binary dependancy on the Heroku platform. 
 
+http://www.petekeen.net/introduction-to-heroku-buildpacks
+https://github.com/ddollar/heroku-buildpack-multi
+https://github.com/peterkeen/heroku-buildpack-vendorbinaries
