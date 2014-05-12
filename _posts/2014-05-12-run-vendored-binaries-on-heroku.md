@@ -33,18 +33,16 @@ heroku run /bin/bash
 
 From the Heroku bash command prompt, download and extract the source code for the binary package you need to run on Heroku. In my case it was:
 
-```bash
+```shell
 curl -O http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
 tar -xjvf geos-3.4.2.tar.bz2
 ```
 
 Open the README or the INSTALL doc for your source code and follow the compile instructions with one change. Change the `prefix` for the install to be something easy to find in your /app folder.
 
-```bash
+```shell
 cd geos-3.4.2
-
 mkdir /app/scratch-space
-
 ./configure --prefix=/app/scratch-space
 make
 make install
@@ -54,9 +52,8 @@ When the compiling is finished you will have a working binary in the /app/scratc
 
 Create an zip archive of the binaries. 
 
-```bash
+```shell
 cd /app/scratch-space
-
 tar -czvf /app/geos-3.4.2-heroku.tar.gz .
 ```
 
@@ -68,26 +65,24 @@ Next copy the geos-3.4.2-heroku.tar.gz to your local machine. I did this in two 
 With the geos-3.4.2-heroku.tar.gz on your local machine extract it into a folder .heroku/vendor in the root of your app. 
 
 
-```bash
+```shell
 # from my app root folder
-
 mkdir .heroku
 mkdir .heroku/vendor
-
 cd .heroku/vendor
 tar -xzvf ~/Downloads/geos-3.4.2-heroku.tar.gz
 ```
 
 Make sure you have the same folder structure as scratch-space in .heroku/vendor. In my case I have three folders: `bin`, `lib`, and `include`.
 
-```bash
+```shell
 ls .heroku/vendor
 bin include lib
 ```
 
 Add the binaries to your git repo and deploy to Heroku. The binaries will be available to your app.
 
-```bash
+```shell
 git add .
 git commit -m "vendored binary for lib geos"
 git push heroku master
