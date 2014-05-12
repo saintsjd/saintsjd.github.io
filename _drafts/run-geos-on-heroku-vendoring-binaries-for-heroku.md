@@ -1,12 +1,14 @@
+--prefix=PATH
+
 ---
 layout: post
 title: Run Vendored Binaries on Heroku
 tags: heroku, devops, deployment, joy
 ---
 
-You can use the steps below to vendor and run any binary dependancy that compiles on Linux on the Heroku platform. 
+You can use the steps below to vendor and run any binary dependency that compiles on Linux on the Heroku platform. 
 
-Recently I needed to install the python [Shapely](https://pypi.python.org/pypi/Shapely) library on an app on Heroku. Shapely has a dependancy on the C Library [GEOS](http://trac.osgeo.org/geos/) which is not part of the base Heroku system. 
+Recently I needed to install the python [Shapely](https://pypi.python.org/pypi/Shapely) library on an app on Heroku. Shapely has a dependency on the C Library [GEOS](http://trac.osgeo.org/geos/) which is not part of the base Heroku system. 
 
 Here is how I complied and vendored the GEOS binary so I could run shapely on Heroku. You could use the same process to vendor a different binary.
 
@@ -91,10 +93,11 @@ git push heroku master
 Optional Step #4: Use buildpacks instead of adding binaries to local git repo
 ----
 
-Instead of Step #3 you can also use the Multi Buildpack and the Vendored Libaries build if you prefer not to have vendored binaries in your git repo. 
+Instead of Step #3 you can also use the Multi Buildpack and the Vendored Libraries build if you prefer not to have vendored binaries in your git repo. 
 
 Copy your binary from Step #2 to amazon s3. 
 
 Install Multi build pack support. See https://github.com/ddollar/heroku-buildpack-multi
 
 Install Vendored Binary buildpack support and create a .vendor_urls file https://github.com/peterkeen/heroku-buildpack-vendorbinaries
+
