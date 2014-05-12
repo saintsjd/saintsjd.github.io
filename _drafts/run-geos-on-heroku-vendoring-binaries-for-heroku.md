@@ -1,5 +1,3 @@
---prefix=PATH
-
 ---
 layout: post
 title: Run Vendored Binaries on Heroku
