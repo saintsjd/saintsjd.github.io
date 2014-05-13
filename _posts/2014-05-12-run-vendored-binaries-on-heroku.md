@@ -79,11 +79,13 @@ Add the binaries to your git repo and deploy to Heroku. The binaries will be ava
 Optional Step #4: Use buildpacks instead of adding binaries to local git repo
 ----
 
-Instead of Step #3 you can also use the Multi Buildpack and the Vendored Libraries build if you prefer not to have vendored binaries in your git repo. 
+Instead of Step #3 you can also use the [Multi Buildpack](https://github.com/ddollar/heroku-buildpack-multi) and the [Vendored Libraries Buildpack](https://github.com/peterkeen/heroku-buildpack-vendorbinaries) build if you prefer not to have vendored binaries in your git repo. 
 
-Copy your binary from Step #2 to amazon s3. 
+You will want to modify your tar.gz file from Step #2 so that it extracts its contents to .heroku/vendor/BINARY_FILES_HERE. 
+
+Then copy your binary from Step #2 to amazon s3. Make the URL public. 
 
 Install Multi build pack support. See https://github.com/ddollar/heroku-buildpack-multi
 
-Install Vendored Binary buildpack support and create a .vendor_urls file https://github.com/peterkeen/heroku-buildpack-vendorbinaries
+Install Vendored Binary buildpack support and create a .vendor_urls file  and add your S3 url to the tar.gz to it. 
 
