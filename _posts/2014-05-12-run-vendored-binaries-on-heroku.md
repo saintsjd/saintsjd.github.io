@@ -94,6 +94,6 @@ Install Vendored Binary buildpack support and create a .vendor_urls file  and ad
 
 ### Links that helped me figure all of this out:
 
-* http://www.petekeen.net/introduction-to-heroku-buildpacks
-* https://github.com/ddollar/heroku-buildpack-multi
-* https://github.com/peterkeen/heroku-buildpack-vendorbinaries
+* [http://www.petekeen.net/introduction-to-heroku-buildpacks](http://www.petekeen.net/introduction-to-heroku-buildpacks)
+* [https://github.com/ddollar/heroku-buildpack-multi](https://github.com/ddollar/heroku-buildpack-multi)
+* [https://github.com/peterkeen/heroku-buildpack-vendorbinaries](https://github.com/peterkeen/heroku-buildpack-vendorbinaries)
