@@ -6,7 +6,7 @@ tags: [ development, geo ]
 
 Recently I needed to install libgeos with PHP5 bindings on Ubuntu 14.04 LTS. The PHP5 bindings are not available as a package in Ubuntu. Here is how I installed it from source.
 
-```bash
+{% highlight bash %}
 apt-get install -y apache2 php5 libapache2-mod-php5 php5-dev phpunit
 
 rm -rf /var/www/html
@@ -27,12 +27,12 @@ EOF
 
 php5enmod geos
 service apache2 restart
-```
+{% endhighlight %}
 
 You can test this in a test.php file with
 
-```php
+{% highlight bash %}
 <?php
 
 echo GEOSVersion();
-```
+{% endhighlight %}
