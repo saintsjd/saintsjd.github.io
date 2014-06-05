@@ -31,7 +31,7 @@ service apache2 restart
 
 You can test this in a test.php file with
 
-{% highlight bash %}
+{% highlight php %}
 <?php
 
 echo GEOSVersion();
