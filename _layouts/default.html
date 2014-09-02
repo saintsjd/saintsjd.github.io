@@ -6,18 +6,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }} | SAINTSJD Hi! I'm Jon Saints</title>
+        <title>{% if page.title != 'Jon Saints') %}{{ page.title }} | {% endif %}Jon Saints</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/pygments.css">
         <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
 
         <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-        <script type="text/javascript" src="//use.typekit.net/pym2ksx.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -25,30 +25,19 @@
         <![endif]-->
 
 
-        <div class="container-narrow">
-            <h1><a href="/">SAINTSJD</a> <small>Hi! I'm Jon Saints...</small></h1>
-            <nav class="navbar navbar-inverse" role="navigation">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
+        <div class="container">
+            <div id="header">
+                <h1>
+                  <a href="/">Jon Saints</a>
+                  <small>
+                    <a href="/"><i class="fa fa-home"></i></a>
+                    <a href="http://www.github.com/saintsjd"><i class="fa fa-github"></i></a>
+                    <a href="http://facebook.com/saintsjd"><i class="fa fa-facebook-square"></i></a>
+                    <a href="/contact.html"><i class="fa fa-envelope-o"></i></a>
+                  </small>
+                </h1>
+            </div>
 
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/">Home</a></li>
-                    <!--<li><a href="/resume.html">Resume</a></li>-->
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-              </div><!-- /.navbar-collapse -->
-            </nav>
-
-            
             <div class="container-inner">
             {{ content }}
             </div>

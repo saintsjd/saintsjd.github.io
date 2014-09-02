@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Latest Thoughts
+title: Jon Saints
 ---
-<ul id="home">
-  {% for post in site.posts %}
-    <li>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date_to_string }}</small></h3>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+  {% capture year %}{{ post.date | date: "%Y" }}{% endcapture %}
+  {% if year != previous_year %}
+  <h3>{{ year }}</h3>
+  {% endif %}
+  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+  {% capture previous_year %}{{ year }}{% endcapture %}
+{% endfor %}
