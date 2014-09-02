@@ -44,33 +44,18 @@ a:visited {
   font-weight: bold;
 }
 
-a:hover {
-}
-
 .container {
 	margin: 0 auto;
 	max-width: 700px;
 }
 
-
 code, pre {
 	font-size: 14px;
 }
 
-ul#home, ul#home li {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+.blog-listing a {
+  font-weight: normal;
 }
-
-ul#home li {
-	border-bottom: 1px solid #ddd;
-}
-
-ul#home li a {
-	color: #222;
-}
-
 footer {
 	text-align:center;
 }
