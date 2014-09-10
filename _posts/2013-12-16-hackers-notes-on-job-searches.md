@@ -35,7 +35,7 @@ Ways you can create a profile worth looking at:
    * Heroku-like Deploy of Wordpress with Git
 1. README Driven Development (RDD)
 
-To busy to write full working code for you Github profile... try **README Driven Development**!
+Too busy to write full working code for you Github profile... try **README Driven Development**!
 
 Just create detailed readme of your idea with complete install steps and documentation. Show example of how the user will use your code to solve a problem. The community might just start a discussion... my [Improvements for Git](http://www.saintsjd.com/2012/01/a-better-ui-for-git/) got to #5 on hackernews.
 
