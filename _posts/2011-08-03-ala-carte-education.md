@@ -15,7 +15,7 @@ A couple sources have inspired my thinking on the topic recently:
 
 1) <a href="http://khanacademy.org">Khan Academy</a>: Revolutionary. Access to high quality lectures on wide range of topics for anyone with an internet connection. Khan believes in flipping classroom. This means lectures by video at home and homework collaboratively in the classroom. <a href="http://www.youtube.com/watch?v=HkMS6Glswig">http://www.youtube.com/watch?v=HkMS6Glswig</a>
 
-2) Book: Reality is Broken by Jane Mcgonigal http://www.amazon.com/Reality-Broken-Games-Better-Change/dp/1594202850. McGonigal Explains the idea of Leveling Up in education. Rather than semesters and grades subjects are given Levels and open time frames.
+2) Book: Reality is Broken by Jane Mcgonigal http://www.amazon.com/Reality-Broken-Games-Better-Change/dp/1594202850. McGonigal Explains the idea of Leveling Up in education. Rather than semesters and grades, subjects are given Levels and open time frames.
 
 With Grades anything but an “A” means you fell short. A letter grade of “C” means the student only got about half as far as the teacher thought they should in a time frame (semester) that was set by the school.
 
