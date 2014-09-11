@@ -91,9 +91,9 @@ Install Multi build pack support. See https://github.com/ddollar/heroku-buildpac
 
 Install Vendored Binary buildpack support and create a .vendor_urls file  and add your S3 url to the tar.gz to it. 
 
-### Note on Installing php bindings
+### Note on Installing libgeos PHP bindings on Heroku
 
-Seems that Heroku needs php shared objects in the folder .heroku/php/lib/php/extensions/no-debug-non-zts-20121212. If you compile with libgeos php bindings make sure you grab the geos.so file from this folder and include it in your vendored binary zip file under the same file path.
+Seems that Heroku needs php shared objects in the folder ```.heroku/php/lib/php/extensions/no-debug-non-zts-20121212```. If you compile with libgeos php bindings make sure you grab the geos.so file from this folder and include it in your vendored binary zip file under the same file path.
 
 ### Links that helped me figure all of this out:
 
