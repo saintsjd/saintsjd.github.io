@@ -17,7 +17,7 @@ A couple sources have inspired my thinking on the topic recently:
 
 2) Book: Reality is Broken by Jane Mcgonigal (http://www.amazon.com/Reality-Broken-Games-Better-Change/dp/1594202850). McGonigal Explains the idea of Leveling Up in education. Rather than semesters and grades subjects are given Levels and open time frames.
 
-With Grades. Anything but an “A” means you fell short. A letter grade of “C” means the student only got about half as far as the teacher thought they should in a time frame (semester) that was set by the school.
+With Grades anything but an “A” means you fell short. A letter grade of “C” means the student only got about half as far as the teacher thought they should in a time frame (semester) that was set by the school.
 
 Leveling up is different. Students progress at their own pace choosing their levels of expertise they want to obtain. Level 1 in chemistry might be “How not to blow yourself up in the kitchen”. Level 3 might be “Ace the AP Chem test”. Level 5 might be “wowzers... you just invented a new kind of compostable plastic”. You wear levels like you wear karate belts. There is no shame in any level. Some students have just journied farther than others.
 
