@@ -58,7 +58,7 @@ Create an zip archive of the binaries.
 
 Next copy the geos-3.4.2-heroku.tar.gz to your local machine. I did this in two steps. You might have a better method. I used `scp` to copy the file to another server and then `scp` again copy the geos-3.4.2-heroku.tar.gz to my local machine. 
 
-With the geos-3.4.2-heroku.tar.gz on your local machine extract it into a folder .heroku/vendor in the root of your app. 
+With the geos-3.4.2-heroku.tar.gz on your local machine extract it into a folder .heroku/vendor in the root of your app. Heroku will automatically add the .heroku/vendor folder to your LD_LIBRARY_PATH. 
 
 
     # from my app root folder
