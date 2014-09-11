@@ -13,7 +13,7 @@ Here is a quick summary of how to do this:
 1. Compile the binary on the heroku platform using a one-off dyno bash prompt ```heroku run /bin/bash```
 1. Copy the compiled package to your local git repo and place it in a folder ```.heroku/vendor```
 
-On your next push to heroku, the system path will recognize the binary dependencies in your pp.
+On your next push to heroku, the system path will recognize the binary dependencies in your path LD_LIBRARY_PATH.
 
 ### Background
 
@@ -91,6 +91,9 @@ Install Multi build pack support. See https://github.com/ddollar/heroku-buildpac
 
 Install Vendored Binary buildpack support and create a .vendor_urls file  and add your S3 url to the tar.gz to it. 
 
+### Note on Installing php bindings
+
+Seems that Heroku needs php shared objects in the folder .heroku/php/lib/php/extensions/no-debug-non-zts-20121212. If you compile with libgeos php bindings make sure you grab the geos.so file from this folder and include it in your vendored binary zip file under the same file path.
 
 ### Links that helped me figure all of this out:
 
