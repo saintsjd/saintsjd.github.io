@@ -95,6 +95,10 @@ Install Vendored Binary buildpack support and create a .vendor_urls file  and ad
 
 Seems that Heroku needs php shared objects in the folder ```.heroku/php/lib/php/extensions/no-debug-non-zts-20121212```. If you compile with libgeos php bindings make sure you grab the ```php/.libs/geos.so``` file and include it in your vendored binary zip file under the ```.heroku/php/lib/php/extensions/no-debug-non-zts-20121212``` file path.
 
+Use this command to find where php .so extentions are installed:
+
+    php-config --extension-dir
+
 ### Links that helped me figure all of this out:
 
 * [http://www.petekeen.net/introduction-to-heroku-buildpacks](http://www.petekeen.net/introduction-to-heroku-buildpacks)
