@@ -6,7 +6,7 @@ tags: heroku, devops, deployment, joy
 
 ### Summary 
 
-Often on Heroku your app might depend on a system package that is not installed in the base Heroku system. Including an external binary dependency in your Heroku app is easy. This binaries are called vendored binaries. 
+Often on Heroku your app might depend on a system package that is not installed in the base Heroku system. Including an external binary dependency in your Heroku app is easy. These binaries are called vendored binaries. 
 
 Here is a quick summary of how to do this:
 
