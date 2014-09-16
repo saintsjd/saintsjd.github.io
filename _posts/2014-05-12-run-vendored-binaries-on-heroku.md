@@ -104,3 +104,4 @@ Use this command to find where php .so extentions are installed:
 * [http://www.petekeen.net/introduction-to-heroku-buildpacks](http://www.petekeen.net/introduction-to-heroku-buildpacks)
 * [https://github.com/ddollar/heroku-buildpack-multi](https://github.com/ddollar/heroku-buildpack-multi)
 * [https://github.com/peterkeen/heroku-buildpack-vendorbinaries](https://github.com/peterkeen/heroku-buildpack-vendorbinaries)
+* [http://joshuaoiknine.com/post/52065881310/compiling-php-extensions-binaries-for-heroku](http://joshuaoiknine.com/post/52065881310/compiling-php-extensions-binaries-for-heroku)
