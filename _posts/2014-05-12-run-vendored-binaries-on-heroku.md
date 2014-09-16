@@ -42,8 +42,7 @@ From the Heroku bash command prompt, download and extract the source code for th
 Open the README or the INSTALL doc for your source code and follow the compile instructions with one change. Change the `prefix` for the install to be something easy to find in your /app folder.
 
     cd geos-3.4.2
-    mkdir /app/scratch-space
-    ./configure --prefix=/app/scratch-space
+    ./configure --prefix=/app/.heroku/vendor
     make
     make install
 
@@ -51,8 +50,7 @@ When the compiling is finished you will have a working binary in the /app/scratc
 
 Create an zip archive of the binaries. 
 
-    cd /app/scratch-space
-    tar -czvf /app/geos-3.4.2-heroku.tar.gz .
+    tar -czvf /app/geos-3.4.2-heroku.tar.gz .heroku/vendor
 
 ### Step #3: Add the vendor library to your local source control 
 
@@ -64,7 +62,6 @@ With the geos-3.4.2-heroku.tar.gz on your local machine extract it into a folder
     # from my app root folder
     mkdir .heroku
     mkdir .heroku/vendor
-    cd .heroku/vendor
     tar -xzvf ~/Downloads/geos-3.4.2-heroku.tar.gz
 
 
@@ -93,11 +90,20 @@ Install Vendored Binary buildpack support and create a .vendor_urls file  and ad
 
 ### Note on Installing libgeos PHP bindings on Heroku
 
-Seems that Heroku needs php shared objects in the folder ```.heroku/php/lib/php/extensions/no-debug-non-zts-20121212```. If you compile with libgeos php bindings make sure you grab the ```php/.libs/geos.so``` file and include it in your vendored binary zip file under the ```.heroku/php/lib/php/extensions/no-debug-non-zts-20121212``` file path.
-
 Use this command to find where php .so extentions are installed:
 
     php-config --extension-dir
+
+look for ```geos.so``` in the folder listed and include this in your zip file 
+
+    tar -czvf /app/geos-3.4.2-heroku.tar.gz .heroku/vendor/ .heroku/php/lib/php/extensions/no-debug-non-zts-20131226/geos.so
+
+Then add ```.heroku/php/etc/php/conf.d/geos.ini with
+
+    ; GEOS extension
+    extension=geos.so
+
+Commit all of this to your local source and push to heroku.
 
 ### Links that helped me figure all of this out:
 
