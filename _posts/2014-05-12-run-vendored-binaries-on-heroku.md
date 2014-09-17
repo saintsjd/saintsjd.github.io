@@ -98,7 +98,7 @@ look for ```geos.so``` in the folder listed and include this in your zip file
 
     tar -czvf /app/geos-3.4.2-heroku.tar.gz .heroku/vendor/ .heroku/php/lib/php/extensions/no-debug-non-zts-20131226/geos.so
 
-Then add ```.heroku/php/etc/php/conf.d/geos.ini with
+Then add ```.heroku/php/etc/php/conf.d/geos.ini``` with
 
     ; GEOS extension
     extension=geos.so
