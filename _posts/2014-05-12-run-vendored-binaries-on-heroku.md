@@ -96,14 +96,14 @@ Use this command to find where php .so extentions are installed:
 
 look for ```geos.so``` in the folder listed and include this in your zip file 
 
-    tar -czvf /app/geos-3.4.2-heroku.tar.gz .heroku/vendor/ .heroku/php/lib/php/extensions/no-debug-non-zts-20131226/geos.so
+    tar -czvf /app/geos-3.4.2-heroku.tar.gz .heroku/vendor/ `php-config --extension-dir`/geos.so
 
 Then add ```.heroku/php/etc/php/conf.d/geos.ini``` with
 
     ; GEOS extension
     extension=geos.so
 
-Commit all of this to your local source and push to heroku.
+Commit all of this to your local source and push to heroku. NOTE: Everytime PHP is upgraded on heroku you will need to recompile the geos extension. The ```php-config --extension-dir``` will change with each upgrade as well.
 
 ### Links that helped me figure all of this out:
 
