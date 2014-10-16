@@ -30,6 +30,5 @@ for row in result:
     print "username:", row['username']
     print "email:", row['email']
     print "First Name:", row['first_name']
-
 ```
 
