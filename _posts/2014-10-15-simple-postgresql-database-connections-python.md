@@ -16,10 +16,6 @@ pip install SQlAlchemy
 pip install psycopg2
 ~~~
 
-Note: To install psycopg2 on my Mac I had to first install [Postgres.app](http://postgresapp.com/) and set my PATH in .bash_profile to ```PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"```
-
-Note: If you are on Ubuntu you will need to ```sudo apt-get install libpq-dev python-dev``` before running ```pip install psycopg2```
-
 Now, with the virtualenv installed, you can run queries from your python scripts. Results are returned as python dictionaries:
 
 ~~~python
@@ -32,3 +28,6 @@ for row in result:
     print "First Name:", row['fname']
 ~~~
 
+Note: To install psycopg2 on my Mac I had to first install [Postgres.app](http://postgresapp.com/) and set my PATH in .bash_profile to ```PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"```
+
+Note: If you are on Ubuntu you will need to ```sudo apt-get install libpq-dev python-dev``` before running ```pip install psycopg2```
