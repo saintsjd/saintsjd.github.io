@@ -29,6 +29,8 @@ for row in result:
     print "First Name:", row['fname']
 ~~~
 
+It appears that SQLAlchemy does the right thing and closes connections if an exception is thrown or the script exits successfully.
+
 Note: To install psycopg2 on my Mac I had to first install [Postgres.app](http://postgresapp.com/) and set my PATH in .bash_profile to ```PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"```
 
 Note: If you are on Ubuntu you will need to ```sudo apt-get install libpq-dev python-dev``` before running ```pip install psycopg2```
