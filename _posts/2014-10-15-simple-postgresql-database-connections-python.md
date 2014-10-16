@@ -25,10 +25,10 @@ Now, with the virtualenv installed, you can run queries from your python scripts
 ~~~python
 engine = create_engine('postgresql://scott:tiger@localhost/mydatabase')
 
-result = engine.execute("select username from users where first_name=%s", ('Jon',) )
+result = engine.execute("select * from users where fname=%s", ('Jon',) )
 for row in result:
     print "username:", row['username']
     print "email:", row['email']
-    print "First Name:", row['first_name']
+    print "First Name:", row['fname']
 ~~~
 
