@@ -29,7 +29,11 @@ for row in result:
     print "First Name:", row['fname']
 ~~~
 
-It appears that SQLAlchemy does the right thing and closes connections if an exception is thrown or the script exits successfully.
+There are a few advantages to doing things this way:
+
+1. Easier syntax than the raw psycopg2 driver
+1. Uses SQLAlchemy connection pooling by default
+1. It appears that SQLAlchemy does the right thing and closes connections if an exception is thrown or the script exits successfully.
 
 Note: To install psycopg2 on my Mac I had to first install [Postgres.app](http://postgresapp.com/) and set my PATH in .bash_profile to ```PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH"```
 
