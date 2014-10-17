@@ -4,8 +4,6 @@ title: Simple Postgresql Database Connections with Python
 tags: [ development, opensource, python ]
 ---
 
-Hello wworld.... 
-
 Deep in the SQLAlchemy docs, I found this gem: a simple way of querying a database from Python that returns query results as a python dictionary. 
 
 First, setup a virtualenv for your project and install SQLAlchemy and psycopg2
