@@ -4,7 +4,7 @@ title: Export Postgres Query to CSV
 tags: [ development, opensource, postgresql, postgres ]
 ---
 
-Postgres makes it easy to export a query to CSV. Here is how I connect to a remote postgresql server and export a query to a CSV file on my local machine. 
+Postgres makes it easy to export a query a remote server and save the results to CSV on your local machine. 
 
 First, connect to the remote database server:
 
