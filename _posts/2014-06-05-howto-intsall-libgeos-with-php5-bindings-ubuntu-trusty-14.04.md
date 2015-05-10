@@ -9,9 +9,6 @@ Recently I needed to install libgeos with PHP5 bindings on Ubuntu 14.04 LTS. The
 {% highlight bash %}
 apt-get install -y apache2 php5 libapache2-mod-php5 php5-dev phpunit
 
-rm -rf /var/www/html
-ln -fs /vagrant /var/www/html
-
 wget http://download.osgeo.org/geos/geos-3.4.2.tar.bz2
 tar -xjvf geos-3.4.2.tar.bz2
 cd geos-3.4.2/
