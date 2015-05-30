@@ -8,7 +8,8 @@ tags: [ development, opensource, python ]
 
 I've spent some time using the method that I outlined below and found some problems with it. I now have a new prefered way of querying postgres from python and getting results as a dictionary. You should use the new way in most cases. 
 
-Here are the problems with the previous method
+Here are the problems with the previous method:
+
 1. The previous method requires sqlalchemy which is a large dependency
 2. The previous method was using a sqlalchemy connection pool and leaving connections open too long. This was a problem when I tried to us this code in background worker tasks that needed to control when connections are closed (so they could open a connection, read some data, disconnect, run a calculation for a while, then re-connect and write back to the database). Leaving the connections open in a pool in sqlalchemy on a large set of workers was consuming all the available connections to the databse.
 
