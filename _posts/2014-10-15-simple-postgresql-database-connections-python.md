@@ -17,6 +17,10 @@ My new suggestion is to use psycopg2 and the `with` statement to ensure that con
 
 http://initd.org/psycopg/docs/usage.html#with-statement
 
+See also the psycopg2 list of Best Practices:
+
+http://initd.org/psycopg/docs/faq.html#best-practices
+
 ### OUTDATED: The ideas below are out of date...  see above
 
 Deep in the SQLAlchemy docs, I found this gem: a simple way of querying a database from Python that returns query results as a python dictionary. 
