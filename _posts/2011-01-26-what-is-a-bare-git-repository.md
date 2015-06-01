@@ -1,21 +1,31 @@
 ---
 layout: post
-title: What is a bare git repository? 
+title: What is a bare git repository?
 permalink: /2011/01/what-is-a-bare-git-repository/index.html
 tags: [ git, open source ]
 ---
 
-What is the difference between a repository created using the "git init" command and the "git init --bare" command?
+UPDATED: 5/30/2015 - Fixed inaccurate description of where files are stored in bare git repositories and updated explanations of both bare and no-bare repositories
 
-Repositories created with "git init" command contain 2 things: the .git folder repository (or code history) and also real life working copies of your source code files. You can think of this type of repository as a working directory. Its a folder with code history stored in .git folder and all the source files as well. You can work in this directory changing source files and save your changes using the "git add" and "git commit" commands.
+**What is the difference between a repository created using the `git init` command and the `git init --bare` command?**
 
-Bare repositories contain only the .git folder and **no working copies of your source files**. If you "cd" into a bare repository you find only the .git folder and nothing else. A bare repository strictly contains the version history of your code.
+Repositories created with the `git init` command are called working directories. In the top level folder of the repository you will find two things:
 
-Why use one or the other?
+1. A .git subfolder with all the git related revision history of your repo
+2. A working tree, or checked out copies of your project files.
 
-Well, a working repository is for just that... **working**. Its where you will actually edit files, add files, delete files to create your project saving your changes to the local .git repo along the way. If you are starting a project in a folder which will contain your code as well as a git repo for tracking changes use "git init". Also if you "git clone" a repository from some one else you will be given a working repository with the .git folder and copies of the working files.
+Repositories created with `git init --bare` are called bare repos. They are structured a bit differently from working directories. First off, they contain no working or checked out copy of your source files. And second, bare repos store git revision history of your repo in the root folder of your repository instead of in a .git subfolder. Note... bare repositories are customarily given a `.git` extension.
 
-A bare repository is for... **sharing** on a centralized server. Bare repositories are shared repos where developers can send their local changes from their working copies of projects to the world or to the rest of their team. By using the "git push" command, you are able to send changes in your local working copies of a project to a centralized shared bare repository. Other developers can then "git pull" to receive the changes that you made. If you are collaborating with a team of developers or you need to work on a project from multiple computers , then a bare git repository is what you need in between to coordinate the distributed development.
+**Why use one or the other?**
 
-To summarize: the working directory created with "git init" or "git clone" is my local copy of a project. Its where I add my changes to a project's code files and test. After I am happy I "git add" and "git commit". Then I "git push" to a bare repository, usually on another server, so that other developers can access my changes. When I want to update my local working copy I "git pull" to receive the changes that other developers have made.
+Well, a working repository created with `git init` is for... **working**. It is where you will actually edit, add and delete files and `git commit` to save your changes. If you are starting a project in a folder on your dev machine where you will add, edit and delete files of your project, use "git init". Note: if you `git clone` a repository you will be given a **working** repository with the .git folder and copies of the working files for editing.
 
+A bare repository created with `git init --bare` is for... **sharing**. If you are collaborating with a team of developers, and need a place to share changes to a repo, then you will want to create a bare repository in centralized place where all users can push their changes (often the easy choice is github.com). Because git is a distributed version control system, no one will directly edit files in the shared centralized repository. Instead developers will clone the shared bare repo, make changes locally in their working copies of the repo, then push back to the shared bare repo to make their changes available to other users.
+
+Because no one ever makes edits directly to files in the shared bare repo, a working tree is not needed. In fact the working tree would just get in way and cause conflicts as users push code to the repository. This is why bare repositories exist and have no working tree.
+
+**To summarize**
+
+I use a working directory created with `git init` or `git clone` when I want to add, edit and delete files in `myproject` locally on my dev machine.
+
+When I am ready, I share my local changes with a `git push` to a bare repository `myproject.git` (usually on a remote server like github.com) so other developers can access my local changes.  
