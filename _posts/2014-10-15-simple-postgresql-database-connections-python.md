@@ -6,7 +6,7 @@ tags: [ development, opensource, python ]
 
 ### UPDATE:
 
-I've spent some time using the method that I outlined below and found some problems with it. I now have a new prefered way of querying postgres from python and getting results as a dictionary. You should use the new way in most cases. 
+I've spent some time using the method that I outlined below and found some problems with it. I now have a new prefered way of querying postgres from python and getting results as a dictionary. You should use the new way in most cases.
 
 Here are the problems with the previous method:
 
@@ -21,9 +21,13 @@ See also the psycopg2 list of Best Practices:
 
 http://initd.org/psycopg/docs/faq.html#best-practices
 
+There is also a dictcursor which will give you results as python dictionaries:
+
+http://initd.org/psycopg/docs/extras.html#dictionary-like-cursor
+
 ### OUTDATED: The ideas below are out of date...  see above
 
-Deep in the SQLAlchemy docs, I found this gem: a simple way of querying a database from Python that returns query results as a python dictionary. 
+Deep in the SQLAlchemy docs, I found this gem: a simple way of querying a database from Python that returns query results as a python dictionary.
 
 First, setup a virtualenv for your project and install SQLAlchemy and psycopg2
 
