@@ -4,6 +4,8 @@ title: How to extract building footprints from OSM
 tags:
 ---
 
+Amazon ec2 instance with 64GB ram. Takes about 1 hour.
+
 ~~~
 buildings.style
 # OsmType  Tag          DataType     Flags
