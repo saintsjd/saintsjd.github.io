@@ -24,6 +24,9 @@ EOF
 
 php5enmod geos
 service apache2 restart
+
+# note: you might need to run ldconfig here if you see permissions issues. I don't see it on my setup, but users in the comments have
+ldconfig
 {% endhighlight %}
 
 You can test this in a test.php file with
