@@ -4,8 +4,6 @@ title: Compete Agreements
 tags: [ startups ]
 ---
 
-I work in a large company. I remember signing a non-compete agreement when I started the job.
-
 There are two reasons I think companies might be better off abolishing non-compete agreements:
 
 1. From what I hear, they are difficult/impossible/expensive to enforce
