@@ -8,7 +8,7 @@ I work in a large company. I remember signing a non-compete agreement when I sta
 
 There are two reasons I think companies might be better off abolishing non-compete agreements:
 
-1. From what I hear, they are difficult/impossible/expensice to enforce
+1. From what I hear, they are difficult/impossible/expensive to enforce
 1. Wouldn't employees be much more likely to bring the next big idea to a company if they were not worried about being sued for pursuing the idea on their own later?
 
 Imagine companies signed Compete Agreements with employees instead of Non-compete Agreements. Compete Agreements grant both parties the right to pursue the idea. They could be structured something like this (For legal effect, I'll throw in lots of extra "therefors" and "here-bys"):
