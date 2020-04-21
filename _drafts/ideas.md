@@ -7,3 +7,11 @@ How to preface a performace review
 Healthcare in the us has a serious UX problem. Experience from user perspective buy an achilles surgery in the US in 2019.
 
 Why I work? to empower others with my work.
+
+# The Definition of Done.
+
+As engineers it is important that we keep in mind what it means to be done.
+
+Done does not mean all the tasks it JIRA are complete.
+
+Done means a user is using what I built. They are empowered by it. They love it. They are obsessed with it. They would be sad if it went away. As a dev team we have checked the boxes in JIRA. We have watched users use our tool. We obsessed over the space between JIRA tickets. so that users find joy using the thing that we built.
