@@ -1,4 +1,4 @@
-community as a safety net.... wait scratch that term altother... lets call it a launching pad. 
+community as a safety net.... wait scratch that term altother... lets call it a launching pad. how can safety net, gov't be wind at constituants back...
 
 government services as a usability optimizatino problem.
 
