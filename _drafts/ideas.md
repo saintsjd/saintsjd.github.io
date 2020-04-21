@@ -15,3 +15,14 @@ As engineers it is important that we keep in mind what it means to be done.
 Done does not mean all the tasks it JIRA are complete.
 
 Done means a user is using what I built. They are empowered by it. They love it. They are obsessed with it. They would be sad if it went away. As a dev team we have checked the boxes in JIRA. We have watched users use our tool. We obsessed over the space between JIRA tickets. so that users find joy using the thing that we built.
+
+#shapeup in JIRA
+
+Team Board Option #3
+
+- Project == Team
+- Sprint == Cycle
+- Epic == Pitch
+- Story == task
+- Subtask == subtask
+- Label == scope
