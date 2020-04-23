@@ -26,3 +26,9 @@ Team Board Option #3
 - Story == task
 - Subtask == subtask
 - Label == scope
+
+# why cooldown
+
+1. in case we over estimate - finish a pitch
+2. address tech debt that we intentionally introduced in order to get user feedback faster
+3. user feedback. you built something. go empower the world with it. it is not done until a user is using it. valuable feedback comes from that. this is time to respond to it
