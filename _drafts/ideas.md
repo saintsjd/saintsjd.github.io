@@ -34,3 +34,9 @@ Team Board Option #3
 3. user feedback. you built something. go empower the world with it. it is not done until a user is using it. valuable feedback comes from that. this is time to respond to it
 
 How to debug the "illusion of commication is that it has taken place". Continually ask and say... here is the story I am telling myself about this idea... does that sound like the story you are telling yourself? what is the story you are telling yourself about this idea? Here is what is different in my understanding of your story vs. the one I am telling myself. 
+
+
+First two weeks of shapeup development cycle. Doesn't feel like full dev. Its mostly design. goals:
+1. turn pitch into design, future README (readme driven development) and into list of must haves and nice to haves
+2. review design with your users and your team 
+3. review must haves and nice to haves with team and with users and stakeholders.
