@@ -32,3 +32,5 @@ Team Board Option #3
 1. in case we over estimate - finish a pitch
 2. address tech debt that we intentionally introduced in order to get user feedback faster
 3. user feedback. you built something. go empower the world with it. it is not done until a user is using it. valuable feedback comes from that. this is time to respond to it
+
+How to debug the "illusion of commication is that it has taken place". Continually ask and say... here is the story I am telling myself about this idea... does that sound like the story you are telling yourself? what is the story you are telling yourself about this idea? Here is what is different in my understanding of your story vs. the one I am telling myself. 
