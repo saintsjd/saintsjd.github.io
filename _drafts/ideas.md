@@ -40,3 +40,9 @@ First two weeks of shapeup development cycle. Doesn't feel like full dev. Its mo
 1. turn pitch into design, future README (readme driven development) and into list of must haves and nice to haves
 2. review design with your users and your team 
 3. review must haves and nice to haves with team and with users and stakeholders.
+
+# measuring success in an organization and its culture
+
+How deep within the org tree are you seeing potential reached and creativity unlocked? or, if you flip the org chart upside down... how high up the tree are you seeing potential reached and creativity unlocked? 
+
+
