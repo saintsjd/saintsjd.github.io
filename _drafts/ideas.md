@@ -45,4 +45,6 @@ First two weeks of shapeup development cycle. Doesn't feel like full dev. Its mo
 
 How deep within the org tree are you seeing potential reached and creativity unlocked? or, if you flip the org chart upside down... how high up the tree are you seeing potential reached and creativity unlocked? 
 
+This idea that crushing the soul of your workforce is a good long term strategy is just totally wrong. how do we nurture the soul, creativity, and potential of our team?
+
 
