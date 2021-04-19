@@ -1,3 +1,6 @@
 #lsi: true
 highlighter: rouge
-markdown: kramdown
+# markdown: kramdown
+
+# plugins:
+#   - jekyll-postcss
