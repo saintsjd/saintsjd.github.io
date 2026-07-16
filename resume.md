@@ -4,9 +4,7 @@ title: Resume Jon Saints
 ---
 
 # Jon Saints
-205 W Emma St, Lafayette, CO 80026 
-+1-720-496- 6615 
-saintsjd@gmail.com
+Lafayette, CO
 
 ## Profile
 
