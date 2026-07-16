@@ -4,7 +4,7 @@ title: Resume Jon Saints
 ---
 
 # Jon Saints
-Lafayette, CO
+Lafayette, CO, USA
 
 ## Profile
 
